@@ -1,8 +1,9 @@
-print("привет я ваш помошник".upper())
-name = input("Введите ваше имя: ")
-current_year = 2024
-date_of_birth = int(input("В каком году вы родились? "))
-age = current_year - date_of_birth
-print("Здравствуйте,", name)
-print("В этом году вам ", age,"лет/года")
-print("привет я ваш помошник".replace("привет", "пока"))
+# 1 Задание
+my_string = input("Введите название вашей страны и горада через пробел: ")
+print("название вашей страны и города состоит из ",len(my_string)-1,"букв")
+# 2 задание
+print(my_string.upper())
+print(my_string.lower())
+print(my_string.replace(" ",""))
+print(my_string[0])
+print(my_string[-1])
