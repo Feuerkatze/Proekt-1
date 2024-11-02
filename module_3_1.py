@@ -5,31 +5,24 @@ def count_calls():
 
 
 def string_info(string):
-    print(len(string), string.upper(),string.lower())
     count_calls()
-
-
+    return(len(string), string.upper(),string.lower())
 
 
 def is_contains(string1, list_to_search):
+    count_calls()
     for i in list_to_search:
         if (i.lower()) != string1.lower():
-            print(False)
-            break
+            return(False)
         elif (i.lower()) == string1.lower():
-            print(i)
-            print(True)
-            break
-
-    count_calls()
+            return(True)
 
 
-string_info("лень")
-string_info("лень")
-string_info("не лень")
-
-is_contains("Лень",["лень", "гнев", "жадность"])
-string_info("Активность")
-is_contains("голод",["лень", "гнев", "жадность"])
+print(string_info("лень"))
+print(string_info("лень"))
+print(string_info("не лень"))
+print(is_contains("Лень",["лень", "гнев", "жадность"]))
+print(string_info("Активность"))
+print(is_contains("голод",["лень", "гнев", "жадность"]))
 
 print("Функций вызванно :", calls, "раз")
