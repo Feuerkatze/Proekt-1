@@ -16,8 +16,7 @@ def calculate_structure_sum(*data_structure):
             summa +=(i)
         elif isinstance(i, str):
             summa +=(len(i))
-        else:
-            return summa
+    return summa
 
 result = calculate_structure_sum(*data_structure)
 print(result)
