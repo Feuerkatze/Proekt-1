@@ -1,7 +1,6 @@
 class House:
     houses_history = [] # названия зданий - история
     def __new__(cls, *args, **kwargs):
-        global houses_history
         cls.houses_history.append(args[0])
         return super().__new__(cls)
     def __init__(self, name, number_of_floors, **kwargs ):
