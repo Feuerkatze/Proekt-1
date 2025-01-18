@@ -60,5 +60,5 @@ del h2 # Удаление объектов
 del h3
 
 print(House.houses_history)
-print(h1.material)
-print(h1.grunt)
+print(h1.material) # материал для постройки здания
+print(h1.grunt) # Материал для установки здания- грунт - фундамент
